@@ -20,10 +20,6 @@ Whether you're looking to automate data processing, document generation, or repe
 
 Here's a brief overview of the projects available in this repository:
 
-## Projects
-
-Here's a brief overview of the projects available in this repository:
-
 1. **SAP Exportation using VBA or Python**
 - VBA Script to initialize, filter and extract data from any SAP Transaction
 - Python code just to run the macro as a plus (not necessary)
