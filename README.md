@@ -24,6 +24,9 @@ Here's a brief overview of the projects available in this repository:
 - VBA Script to initialize, filter and extract data from any SAP Transaction
 - Python code just to run the macro as a plus (not necessary)
 
+2. **Google Drive FIle Organizer with Google OAuth**
+- Python script to login Google Drive using Google OAuth (google authentication) and upload or download files and folders
+- Get the token and credentials in Google Cloud Services
 
 ## Contributing
 
