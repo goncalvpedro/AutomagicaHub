@@ -28,6 +28,9 @@ Here's a brief overview of the projects available in this repository:
 - Python script to login Google Drive using Google OAuth (google authentication) and upload or download files and folders
 - Get the token and credentials in Google Cloud Services
 
+3. **Manipulate Pdf files**
+- Rotate, Merge, Extract Texts and Images, Reduce the file size, Encrypt and Decrypt
+
 ## Contributing
 
 Contributions to this repository are welcome! If you have an automation project implemented in Python or VBA that you'd like to share, feel free to submit a pull request.
