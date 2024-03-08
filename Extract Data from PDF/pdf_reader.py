@@ -1,5 +1,7 @@
 from PyPDF2 import PdfReader, PdfWriter
 import file_explorer
+import pandas as pd
+
 file_names = ''
 
 def mergePdf():
@@ -33,7 +35,7 @@ def rotatePdf():
             print('The degrees must be higher than 0°')
             return
         elif degrees%90 != 0:
-            print('The degrees must be a multiple of 90°')
+            print('The rotation degree has to be multiple of 90.')
             return
     except:
         print('You need to type a number')
@@ -49,19 +51,38 @@ def rotatePdf():
     return print('Check your directory folder to see the rotated file.')
 
 def extractText():
-    file_paths = list(file_explorer.select_files())
+    file_paths = file_explorer.get_file_info()
 
     for file in file_paths:
-        file_names.append(file.split("/")[-1].split(".")[0])
 
-    for file in file_paths:
-        with open(file_paths[file], "rb") as f:
+        with open(file[0], "rb") as f:
             reader = PdfReader(f)
-            text = ""
+            text = []
             for page in reader.pages:
-                text += page.extract_text()
-    return text
+                text.append(page.extract_text())
+                file_name = file[1]
 
+        output_file_name = "extracted_text.txt"
+
+        with open(output_file_name, "w") as output_file:
+            page_counter = 0
+            for page_text in text:
+                output_file.write(page_text + '*'*30 +"\n" )
+                page_counter += 1
+    return file_name
+
+def readTextFile():
+    file_path = 'example.txt'
+
+    try:
+        with open(file_path, 'r') as file:
+            
+            file_contents = file.read()
+            print(file_contents)
+    except FileNotFoundError:
+        print(f"The file '{file_path}' does not exist.")
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
 
 def extractImages():
     file_paths = list(file_explorer.select_files())
@@ -154,4 +175,3 @@ def decryptPdf():
         with open(f'{file_names[count]}_decrypted.pdf', "wb") as fp:
             writer.write(fp)
         count += 1
-
