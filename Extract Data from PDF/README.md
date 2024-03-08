@@ -14,6 +14,10 @@ This project aims to work with basic pdf manipulation, such as, rotation, merge,
 
 This project is an introduction for PDF manipulation. PyPDF2 is not the most complete module but it has everything that you need to start and practice pdf manipulation. For more complex project, I would use **MuPDF** *https://mupdf.readthedocs.io/en/latest/index.html* which also works for JavaScript, C# and C++ and it is much more customizable and you can get better results in data extraction, resizing it and also with the PDF encryption. 
 
+
+**----------------------------------------------------------------------------------------------------------------------------------**
+
+
 ## Features
 
 - Python 3.11
@@ -21,6 +25,10 @@ This project is an introduction for PDF manipulation. PyPDF2 is not the most com
 - Google Generative AI - Gemini AI 0.4.0
 - pandas 2.2.1
 - tkinter
+
+
+**----------------------------------------------------------------------------------------------------------------------------------**
+
 
 ## Usage
 
@@ -40,7 +48,7 @@ This project is an introduction for PDF manipulation. PyPDF2 is not the most com
 
     It is where I built all functions to manipulate files. It is called by the option that the user choose on the 'menu'. Could be done as a Class? Yes, but I didn't, feel free to do it and pull a request here, I will be glad to have collaborators!!
 
-*Generative AI - Gemini*
+***Generative AI - Gemini***
 
 Get your API key in Google AI Studio for free.
 
@@ -53,6 +61,8 @@ Get your API key in Google AI Studio for free.
     This file is the beginning of a bigger project that consists in a AI that would interpret a document and be trained by it to answer and create questions about it and give insights. 
 
     Read Gemini AI documentation to learn what is embedding and why is important, it will boost you AI techniques! Every AI-related script here is based on theirs.
+
+**----------------------------------------------------------------------------------------------------------------------------------**
 
 **Gemini AI Overview**
 
