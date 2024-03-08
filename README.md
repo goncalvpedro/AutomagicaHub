@@ -21,15 +21,15 @@ Whether you're looking to automate data processing, document generation, or repe
 Here's a brief overview of the projects available in this repository:
 
 1. **SAP Exportation using VBA or Python**
-- VBA Script to initialize, filter and extract data from any SAP Transaction
-- Python code just to run the macro as a plus (not necessary)
+  - VBA Script to initialize, filter and extract data from any SAP Transaction
+  - Python code just to run the macro as a plus (not necessary)
 
 2. **Google Drive FIle Organizer with Google OAuth**
-- Python script to login Google Drive using Google OAuth (google authentication) and upload or download files and folders
-- Get the token and credentials in Google Cloud Services
+  - Python script to login Google Drive using Google OAuth (google authentication) and upload or download files and folders
+  - Get the token and credentials in Google Cloud Services
 
 3. **Manipulate Pdf files**
-- Rotate, Merge, Extract Texts and Images, Reduce the file size, Encrypt and Decrypt
+  - Rotate, Merge, Extract Texts and Images, Reduce the file size, Encrypt and Decrypt
 
 ## Contributing
 
@@ -45,8 +45,5 @@ Here's how you can contribute:
 
 Please ensure that your code adheres to best practices and includes appropriate documentation.
 
-## License
-
-This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
 Happy automating!
