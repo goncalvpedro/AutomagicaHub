@@ -31,6 +31,14 @@ Here's a brief overview of the projects available in this repository:
 3. **Manipulate Pdf files**
 - Rotate, Merge, Extract Texts and Images, Reduce the file size, Encrypt and Decrypt
 
+4. **QR Code Reading and Intrepretation**
+- If you have a QR Code Scanner (same as in any store) and you need to do something with the code scanned, you might need this script. In *dist* folder you will find a *.exe* file that opens ready to receive the scanner information and, in my case, translates pieces of it and split them into a data frame column. 
+- When the day is over, the employee clicks on 'Enviar leituras' and a *.csv* file is created in the same folder as your *.exe* file is with all information compiled. As an extra for my client, I did a button called 'Encerrar dia' that ends the script correctly and shut the computer down after 30 seconds.
+- Scanner informations:
+    - I am using a 1472g CCB Honeywell Scanner - one of their simplest
+    - I set the scanner as Keyboard and asked the code to 'press' <Return> after reading the QR code.
+    - To do the same, opens the instructions for your scanner and find ***Keyboard Behaviour***.
+
 ## Contributing
 
 Contributions to this repository are welcome! If you have an automation project implemented in Python or VBA that you'd like to share, feel free to submit a pull request.
